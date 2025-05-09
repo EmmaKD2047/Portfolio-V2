@@ -1,34 +1,54 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    gap: 53px;
-    align-items: center;
-    padding-bottom: 20px;
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  align-items: center;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 97px;
+  background-color: #ffffff;
+  width: 100%;
 }
 
-.heading{
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 52px;
-    font-weight: 800;
+.heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
 }
 
-.links{
-    display: flex;
-    justify-content: center;
-    gap: 55px;
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
 }
 
-.links p{
-    cursor: pointer;
+.links p {
+  cursor: pointer;
 }
 
-.projects{
-    width: 100%;
-    padding: 69px 163px;
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 69px 163px;
+}
+
+.active {
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.active::after {
+  content: "•";
+  position: absolute;
+  bottom: -14px;
 }

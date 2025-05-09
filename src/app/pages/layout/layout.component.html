@@ -1,8 +1,17 @@
 <div class="layout_div">
   <div class="nav">
-    <img src="../../../assets/name.svg" alt="" class="logo_name">
-    <img src="../../../assets/menu.svg" alt="" class="">
+    <img src="../../../assets/name.svg" alt="" class="logo_name" routerLink="/home">
+    <div class="menu_div">
+      <input type="checkbox" class="checkbox" id="active" #myCheckbox>
+      <label for="active">
+        <img src="../../../assets/menu.svg" alt="" class="menu" (click)="checkCheckbox()">
+      </label>
+    </div>
   </div>
   <router-outlet></router-outlet>
   <div class="button"></div>
+</div>
+<div class="menu_overlay" *ngIf="check">
+  <div class="close_button" (click)="uncheckCheckbox()"></div>
+  <div class="links"></div>
 </div>

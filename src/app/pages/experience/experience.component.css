@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.experience_div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 45vw;
+}
+
+.experience {
+  display: flex;
+  gap: 43px;
+}
+
+.left {
+  min-width: 10rem;
+}
+
+.timeline {
+  color: #4d4d4d;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.job_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.company {
+  color: #840fff;
+  font-weight: 300;
+}
+
+.desc p {
+  font-size: 15px;
+  font-weight: 350;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}

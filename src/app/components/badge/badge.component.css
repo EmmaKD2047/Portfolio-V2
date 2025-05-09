@@ -1,0 +1,27 @@
+.badge_container {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  height: fit-content;
+  width: fit-content;
+}
+
+.badge_container.solid {
+  background-color: #000000;
+  color: white;
+}
+
+.badge_container.solid.even {
+  background-color: #840fff;
+  color: white;
+}
+
+.badge_container.outline {
+  border: 1px solid #840FFF;
+  color: #840FFF;
+}
+
+p {
+  font-weight: 300;
+}

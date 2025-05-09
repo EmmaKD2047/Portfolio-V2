@@ -12,6 +12,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { FeaturedComponent } from './pages/projects/featured/featured.component';
 import { AllProjectsComponent } from './pages/projects/all-projects/all-projects.component';
+import { BadgeComponent } from './components/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AllProjectsComponent } from './pages/projects/all-projects/all-projects
     ProjectsComponent,
     ProjectDetailsComponent,
     FeaturedComponent,
-    AllProjectsComponent
+    AllProjectsComponent,
+    BadgeComponent
   ],
   imports: [
     BrowserModule,

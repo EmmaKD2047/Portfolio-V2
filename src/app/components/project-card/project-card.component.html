@@ -3,14 +3,20 @@
   <div class="overlay_background"></div>
   <div class="overlay">
     <div class="top">
-      <p class="project_title">Blog Template</p>
+      <p class="project_title">{{ title }}</p>
+      <p class="project_desc">{{ description }}</p>
     </div>
     <div class="bottom">
-      <div class="tags">
-        <span class="tag html">HTML</span>
-        <span class="tag css">CSS</span>
+      <div class="tags_div">
+        <div class="tag" *ngFor="let tag of tags; let i=index">
+          <app-badge [label]="tag" [even]="i % 2 === 0 ? false : true" type="solid"></app-badge>
+        </div>
       </div>
-      <div class="link"></div>
+      <div class="link">
+        <div class="link_button">
+          <img src="assets/arrow-up.svg" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
